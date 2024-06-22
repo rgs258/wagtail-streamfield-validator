@@ -1,0 +1,1 @@
+default_app_config = "wagtail_streamfield_validator.test.apps.WagtailStreamfieldValidatorTestAppConfig"
