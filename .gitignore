@@ -1,16 +1,141 @@
-__pycache__/
+/media
+
+# Byte-compiled / optimized / DLL files
 *.py[co]
-/build
-/dist
-/wagtail_streamfield_validator.egg-info
-/.coverage
-/htmlcov
-/.tox
-/.venv
+__pycache__/
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+*.egg*
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+.installed.cfg
+
+# Environment and source
 /venv
-/.vscode
-/site
-/test_wagtail_streamfield_validator.db
-/node_modules
-/test-static
-/test-media
+/venv--*
+/uninstall*
+/src
+venv/
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+.python-version
+htmlcov/
+.coverage
+django-queries-results.html
+.pytest-queries
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff
+/static
+/django-wrds.log*
+
+# Sphinx documentation
+docs/_build/
+build
+
+# PyBuilder
+target/
+
+#Ipython Notebook
+.ipynb_checkpoints
+
+# SQLite3 database files:
+*.db
+
+# Logs:
+*.log
+
+# Linux Editors
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+.\#*
+*.swp
+*.swo
+
+# Mac
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Dev tools and config files
+.idea
+.vagrant
+.vscode
+.editorconfig
+.ftpconfig
+.ftpignore
+.jshintignore
+.lintignore
+project.cson
+.env
+.project
+
+# Ignore local configurations
+config/settings/user.py
+config/settings/local.py
+db.sqlite3
+secrets.py
+
+# Node modules
+node_modules/
+*node_modules/
+
+#sass cache
+*sass-cache/
+
+# PostgreSQL Backups
+db_backup/
+
+# dumpdata file
+db.json
+
+# Dev certs
+/cert.crt
+/cert.key
+
+
+
+
