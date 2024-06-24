@@ -1,10 +1,42 @@
 # Wagtail streamfield-validator
 
-A one line description of your package.
+A Wagtail StreamField JSON validation provider.
 
 [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![PyPI version](https://badge.fury.io/py/wagtail-streamfield-validator.svg)](https://badge.fury.io/py/wagtail-streamfield-validator)
 [![streamfield-validator CI](https://github.com/wagtail/wagtail-streamfield-validator/actions/workflows/test.yml/badge.svg)](https://github.com/wagtail/wagtail-streamfield-validator/actions/workflows/test.yml)
+
+## Introduction
+
+This is a very early project, and it is not yet ready for production use. It is a work in progress.
+
+This project seeks to address/implement https://github.com/wagtail/wagtail/issues/6495.
+
+The goal of this project is to provide a way to validate the JSON structure of a Wagtail StreamField.
+This is useful when you want to generate or modify StreamField content programmatically, and you want
+to ensure that the content is valid before saving it to the database.
+
+The immediate next steps for the project are:
+
+1. Ability to generate a JSON schema from a StreamField definition.
+2. Ability to validate a JSON object against the generated schema.
+3. Ability to install the JSON schema as a validator on the StreamField's model JSONField.
+4. Ability to install the JSON schema as a validator on a rest_framework endpoint.
+
+The project should be built in a way that it can be used to produce other validation formats than
+JSON schema. For example, one might like to generate a Pydantic model to use for programmatic
+validation of the StreamField content.
+
+This project might potentially use the following packages:
+
+- [jsonschema](https://pypi.org/project/jsonschema/)
+- [pydantic](https://pypi.org/project/pydantic/)
+- [datamodel-code-generator](https://pypi.org/project/datamodel-code-generator/)
+- https://plugins.jetbrains.com/plugin/12861-pydantic
+
+Also note these
+
+- https://github.com/wagtail/wagtail-streamfield-migration-toolkit/blob/main/wagtail_streamfield_migration_toolkit/autodetect/streamchangedetector.py
 
 ## Links
 
@@ -16,9 +48,9 @@ A one line description of your package.
 
 ## Supported versions
 
-- Python ...
-- Django ...
-- Wagtail ...
+- Python 3.10, 3.11, 3.12
+- Django 4.2, 5.0, 5.1
+- Wagtail 4.1, 5.2, 6.0, 6.1
 
 ## Installation
 
